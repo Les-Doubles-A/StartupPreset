@@ -41,6 +41,7 @@ from PySide6.QtWidgets import (
     QInputDialog
 )
 from PySide6.QtCore import Qt
+from PySide6.QtGui import QIcon
 
 # ---------------------------------------------------------------------------
 # Constantes et configuration
@@ -537,6 +538,11 @@ def main():
 
     app = QApplication(sys.argv)
     app.setStyle("Fusion")
+    # Icone embarquee par PyInstaller (sys._MEIPASS) ou a cote du script.
+    icon_dir = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
+    icon_path = icon_dir / "StartupPreset.ico"
+    if icon_path.exists():
+        app.setWindowIcon(QIcon(str(icon_path)))
     window = MainWindow()
     window.show()
     sys.exit(app.exec())

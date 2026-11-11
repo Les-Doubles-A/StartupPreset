@@ -151,7 +151,7 @@ proprement l'entrée du registre.
 <!-- installeur-release -->
 ## Installation
 
-Téléchargez **`StartupPreset-Setup-1.0.0.exe`** depuis la [dernière release](https://github.com/Les-Doubles-A/StartupPreset/releases/latest), puis lancez-le.
+Téléchargez **`StartupPreset-Setup-1.0.1.exe`** depuis la [dernière release](https://github.com/Les-Doubles-A/StartupPreset/releases/latest), puis lancez-le.
 
 L'installation se fait pour l'utilisateur courant, sans droits administrateur (par défaut dans `%LOCALAPPDATA%\Programs\StartupPreset`), avec un raccourci dans le menu Démarrer et une désinstallation depuis les Paramètres Windows.
 

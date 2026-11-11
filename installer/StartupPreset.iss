@@ -1,8 +1,8 @@
 ﻿; Installeur Inno Setup de StartupPreset. Compilation : iscc installer\StartupPreset.iss
-; Le setup est cree dans installer\Output\StartupPreset-Setup-1.0.0.exe
+; Le setup est cree dans installer\Output\StartupPreset-Setup-1.0.1.exe
 #define MyAppExe "StartupPreset.exe"
 #define MyAppName "StartupPreset"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppURL "https://github.com/Les-Doubles-A/StartupPreset"
 
 [Setup]
@@ -26,6 +26,7 @@ WizardStyle=modern
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 CloseApplications=yes
+SetupIconFile=..\StartupPreset.ico
 UninstallDisplayIcon={app}\StartupPreset.exe
 
 [Languages]
